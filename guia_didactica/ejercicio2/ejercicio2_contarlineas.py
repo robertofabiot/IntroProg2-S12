@@ -8,6 +8,7 @@ while True:
         archivo = open(nombre_archivo, "r")
         lineas = len(archivo.readlines())
         print(f"El archivo tiene {lineas} lineas.")
+        archivo.close()
         break
     except FileNotFoundError:
         print("😱 ¡Oh no! Parece que el archivo que estás buscando ha decidido jugar al escondite... 🎭 Pero no te preocupes, juntos lo encontraremos. 🚀 ¿Quizás verificando el nombre del archivo o su ubicación? ¡Tú puedes! 💪")
